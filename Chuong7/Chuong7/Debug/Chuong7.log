@@ -1,0 +1,7 @@
+﻿  Source.c
+f:\nam1\laptrinhc\code\chuong7\chuong7\source.c(6): warning C4081: expected 'newline'; found ';'
+f:\nam1\laptrinhc\code\chuong7\chuong7\source.c(91): warning C4129: 'M': unrecognized character escape sequence
+f:\nam1\laptrinhc\code\chuong7\chuong7\source.c(96): warning C4129: 'S': unrecognized character escape sequence
+f:\nam1\laptrinhc\code\chuong7\chuong7\source.c(129): warning C4047: 'function': 'time *' differs in levels of indirection from 'time **'
+f:\nam1\laptrinhc\code\chuong7\chuong7\source.c(129): warning C4024: 'xuattime': different types for formal and actual parameter 1
+  Chuong7.vcxproj -> F:\NAM1\LaptrinhC\code\Chuong7\Debug\Chuong7.exe

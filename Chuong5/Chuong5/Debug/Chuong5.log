@@ -1,0 +1,4 @@
+﻿  Source.c
+f:\nam1\laptrinhc\code\chuong5\chuong5\source.c(6): warning C4081: expected 'newline'; found ';'
+f:\nam1\laptrinhc\code\chuong5\chuong5\source.c(92): warning C4048: different array subscripts: 'int (*)[100]' and 'int [3][3]'
+  Chuong5.vcxproj -> F:\NAM1\LaptrinhC\code\Chuong5\Debug\Chuong5.exe

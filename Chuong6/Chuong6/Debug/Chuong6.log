@@ -1,0 +1,3 @@
+﻿  Source.c
+F:\NAM1\LaptrinhC\code\Chuong6\Chuong6\Source.c(427,64): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Chuong6.vcxproj -> F:\NAM1\LaptrinhC\code\Chuong6\Debug\Chuong6.exe
