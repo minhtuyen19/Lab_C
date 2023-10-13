@@ -1,0 +1,15 @@
+Một vài lưu ý để thực thi code C trên Visual Studio:
+
+- Đổi file source.cpp -> source.code
+- Thêm các dòng code ignore error:
+
+#include<stdio.h>
+#include<string.h>
+#define _CRT_SECURE_NO_WARNINGS
+#define _CRT_SECURE_NO_DEPRECATE  
+#define _CRT_NONSTDC_NO_DEPRECATE
+#pragma warning (disable: 4996);
+
+- Nếu gặp lỗi scanf,... chuyển:
+	+ scanf -> scanf_s
+	
