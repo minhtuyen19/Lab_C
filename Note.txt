@@ -1,6 +1,6 @@
 Một vài lưu ý để thực thi code C trên Visual Studio:
 
-- Đổi file source.cpp -> source.code
+- Đổi file source.cpp -> source.c khi add source file
 - Thêm các dòng code ignore error:
 
 #include<stdio.h>
