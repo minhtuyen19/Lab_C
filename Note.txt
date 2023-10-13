@@ -1,15 +1,36 @@
-Một vài lưu ý để thực thi code C trên Visual Studio:
+I. Cách tạo project thực thi code:
 
-- Đổi file source.cpp -> source.c khi add source file
-- Thêm các dòng code ignore error:
+	1. Đặt tên theo cú pháp sau: Ho&ten_MSSV_Week_1
+	2. Các source file trong project đặt tên theo thứ bài trong bài giảng. Ví dụ: Bài 1 -> Bai_1
 
-#include<stdio.h>
-#include<string.h>
-#define _CRT_SECURE_NO_WARNINGS
-#define _CRT_SECURE_NO_DEPRECATE  
-#define _CRT_NONSTDC_NO_DEPRECATE
-#pragma warning (disable: 4996);
-
-- Nếu gặp lỗi scanf,... chuyển:
-	+ scanf -> scanf_s
+II. Bài tập tuần 1:
 	
+	<<Bài tập câu lệnh If>>
+	Ca 1:
+	+ Bài 4
+	Ca 2: 
+	+ Bài 6
+	<<Bài tập cấu trúc lặp>>
+	Ca 1: 
+	+ Bài 2 (Bài 6)
+	Ca 2:
+	+ Bài 5 (Bài 7)
+	
+III. Một vài lưu ý để thực thi code C trên Visual Studio:
+
+	//- Đổi tên file source.cpp -> source.c khi add source file//
+
+	- Thêm các dòng code ignore error:
+
+	#include<stdio.h>
+	#include<string.h>
+	#define _CRT_SECURE_NO_WARNINGS
+	#define _CRT_SECURE_NO_DEPRECATE  
+	#define _CRT_NONSTDC_NO_DEPRECATE
+	#pragma warning (disable: 4996);
+
+	- TH không thêm các define ignore error chuyển:
+		+ scanf -> scanf_s
+		+ getch() -> _getch()
+		+ fscanf -> fscanf_s
+		
