@@ -4,17 +4,13 @@ I. Cách tạo project thực thi code:
 	2. Các source file trong project đặt tên theo thứ bài trong bài giảng. Ví dụ: Bài 1 -> Bai_1
 
 II. Bài tập tuần 1:
-	
+
 	<<Bài tập câu lệnh If>>
-	Ca 1:
-	+ Bài 4
-	Ca 2: 
-	+ Bài 6
+		+ Bài 4
 	<<Bài tập cấu trúc lặp>>
-	Ca 1: 
-	+ Bài 2 (Bài 6)
-	Ca 2:
-	+ Bài 5 (Bài 7)
+		+ Bài 2 (Bài 6)
+
+
 	
 III. Một vài lưu ý để thực thi code C trên Visual Studio:
 
@@ -34,3 +30,71 @@ III. Một vài lưu ý để thực thi code C trên Visual Studio:
 		+ getch() -> _getch()
 		+ fscanf -> fscanf_s
 		
+		
+
+
+Link diem: https://docs.google.com/spreadsheets/d/1l5dJl6-c3cdn_smr_3phThgmR-II6UoJB0b9_7ZuXII/edit?usp=sharing
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	<<Bài tập câu lệnh If>>
+		+ Bài 6
+	<<Bài tập cấu trúc lặp>>
+		+ Bài 5 (Bài 7)	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	<<Bài tập câu lệnh If>>
+	Ca 1:
+	+ Bài 4
+	Ca 2: 
+	+ Bài 6
+	<<Bài tập cấu trúc lặp>>
+	Ca 1: 
+	+ Bài 2 (Bài 6)
+	Ca 2:
+	+ Bài 5 (Bài 7)
