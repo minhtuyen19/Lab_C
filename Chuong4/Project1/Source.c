@@ -460,3 +460,49 @@ int main() {
 
 	return 0;
 }
+
+
+//=======================================================
+#include <stdio.h>
+#include <string.h>
+
+void chenTu(char *chuoi, const char *tuCanChen, int viTriChen) {
+    int chieuDaiChuoi = strlen(chuoi);
+    int chieuDaiTu = strlen(tuCanChen);
+
+    if (viTriChen < 0 || viTriChen > chieuDaiChuoi) {
+        printf("Vi tri chen khong hop le.\n");
+        return;
+    }
+
+    // Dời các ký tự sau viTriChen sang phải để tạo không gian cho từ mới
+    for (int i = chieuDaiChuoi; i >= viTriChen; i--) {
+        chuoi[i + chieuDaiTu] = chuoi[i];
+    }
+
+    // Chèn từ vào chuỗi
+    for (int i = 0; i < chieuDaiTu; i++) {
+        chuoi[viTriChen + i] = tuCanChen[i];
+    }
+}
+
+int main() {
+    char chuoi[1000];
+    char tuCanChen[100];
+    int viTriChen;
+
+    printf("Nhap chuoi: ");
+    fgets(chuoi, sizeof(chuoi), stdin);
+
+    printf("Nhap tu can chen: ");
+    fgets(tuCanChen, sizeof(tuCanChen), stdin);
+
+    printf("Nhap vi tri can chen: ");
+    scanf("%d", &viTriChen);
+
+    chenTu(chuoi, tuCanChen, viTriChen);
+
+    printf("Chuoi sau khi chen tu: %s", chuoi);
+
+    return 0;
+}
