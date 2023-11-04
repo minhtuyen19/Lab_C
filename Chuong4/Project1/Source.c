@@ -164,7 +164,7 @@
 //{
 //	char s[100];
 //	printf("\nNhap chuoi: ");
-//	fgets(s, 100, stdin); // nên dùng hàm fgets
+//	fgets(s, 100, stdin); 
 //	/*gets(s);*/
 //	char *kq = DaoNguoc(s);
 //	InDaoNguoc(s);
@@ -213,10 +213,10 @@
 //	int length = strlen(chuoi);
 //	for (int i = 0; i < length; i++) {
 //		if (chuoi[i] == kyTu) {
-//			return i; // Trả về vị trí đầu tiên của ký tự trong chuỗi
+//			return i; 
 //		}
 //	}
-//	return -1; // Trả về -1 nếu không tìm thấy ký tự
+//	return -1; 
 //}
 //
 //int main() {
@@ -227,7 +227,7 @@
 //	fgets(chuoi, sizeof(chuoi), stdin);
 //
 //	printf("Nhap ky tu can tim: ");
-//	scanf(" %c", &kyTu); // Đọc một ký tự từ bàn phím
+//	scanf(" %c", &kyTu); 
 //
 //	int viTri = timViTriKyTu(chuoi, kyTu);
 //
@@ -259,7 +259,7 @@
 //			j++;
 //			if (j == chieuDaiTen - 1) {
 //				if (hoten[i] == ' ' || hoten[i] == '\n' || hoten[i] == '\0') {
-//					return true; // Tên đã nhập đúng
+//					return true;
 //				}
 //			}
 //		}
@@ -325,7 +325,7 @@
 //	printf("Nhap chuoi: ");
 //	fgets(chuoi, sizeof(chuoi), stdin);
 //
-//	// Gọi hàm để đảo vị trí từ đầu và từ cuối
+//	
 //	daoViTriTu(chuoi);
 //
 //	printf("Chuoi sau khi dao vi tri tu dau va tu cuoi: %s", chuoi);
@@ -342,20 +342,20 @@
 //void catChuoiTenHoLot(char *hoten, char *holot, char *ten) {
 //	int i = strlen(hoten) - 1;
 //
-//	// Tìm vị trí của ký tự cuối cùng là khoảng trắng trong chuỗi họ tên
+//	// Tim vt ky tu cuoi la khoang trang 
 //	while (i >= 0 && hoten[i] != ' ') {
 //		i--;
 //	}
 //
 //	if (i < 0) {
-//		// Nếu không tìm thấy khoảng trắng, hoten chứa tên riêng
+//
 //		strcpy(ten, hoten);
-//		holot[0] = '\0'; // Chuỗi họ lót trống
+//		holot[0] = '\0'; // 
 //	}
 //	else {
-//		// Ngược lại, cắt chuỗi họ lót và tên
+//		// 
 //		strncpy(holot, hoten, i);
-//		holot[i] = '\0'; // Đặt ký tự kết thúc chuỗi
+//		holot[i] = '\0';
 //		strcpy(ten, hoten + i + 1);
 //	}
 //}
@@ -368,7 +368,7 @@
 //	printf("Nhap ho ten: ");
 //	fgets(hoten, sizeof(hoten), stdin);
 //
-//	// Gọi hàm để cắt chuỗi họ tên thành chuỗi họ lót và chuỗi tên
+//
 //	catChuoiTenHoLot(hoten, holot, ten);
 //
 //	printf("Chuoi ho lot: %s\n", holot);
@@ -376,7 +376,74 @@
 //
 //	return 0;
 //}
-
+//========================================BAI 14
+//#include<stdio.h>
+//
+//#include<string.h>
+//
+//#define max 100
+//
+//char CatHoTen(char s[], char s1[])
+//
+//{
+//
+//	int len = strlen(s);
+//
+//	int i = len - 1, j;
+//
+//	int m = 0;
+//
+//	while (i >= 0)
+//
+//	{
+//
+//		if ((s[i] == ' ') && (s[i + 1] != ' '))
+//
+//		{
+//
+//			for (j = i + 1; j < len; j++)
+//
+//			{
+//
+//				s1[m] = s[j];
+//
+//				m++;
+//
+//			}
+//
+//			s[i] = '\0';
+//
+//			break;
+//
+//		}
+//
+//		i--;
+//
+//	}
+//
+//	printf("Ho: %s\n", s);
+//
+//	printf("Ten: %s", s1);
+//
+//}
+//
+//int main()
+//
+//{
+//
+//	char s[max];
+//
+//	char s1[max];
+//
+//	printf("Nhap xau: ");
+//
+//	gets(s);
+//
+//
+//
+//	CatHoTen(s, s1);
+//
+//}
 
 //Phan nang cao
 
@@ -385,19 +452,19 @@
 //
 //void doiChuHoaChuThuong(char *chuoi) {
 //	int i = 0;
-//	int inWord = 0; // Kiểm tra xem hiện tại đang ở trong một từ
+//	int inWord = 0; 
 //
 //	while (chuoi[i] != '\0') {
 //		if ((chuoi[i] >= 'a' && chuoi[i] <= 'z') || (chuoi[i] >= 'A' && chuoi[i] <= 'Z')) {
 //			if (!inWord) {
-//				// Bắt đầu một từ mới, đổi chữ hoa
+//				
 //				if (chuoi[i] >= 'a' && chuoi[i] <= 'z') {
 //					chuoi[i] -= 32;
 //				}
 //				inWord = 1;
 //			}
 //			else {
-//				// Tiếp tục từ, đổi chữ thường
+//			
 //				if (chuoi[i] >= 'A' && chuoi[i] <= 'Z') {
 //					chuoi[i] += 32;
 //				}
@@ -416,7 +483,7 @@
 //	printf("Nhap chuoi: ");
 //	fgets(chuoi, sizeof(chuoi), stdin);
 //
-//	// Gọi hàm để đổi các từ ở đầu câu sang chữ hoa và những từ không phải đầu câu sang chữ thường
+//	
 //	doiChuHoaChuThuong(chuoi);
 //
 //	printf("Chuoi sau khi doi: %s", chuoi);
@@ -425,84 +492,115 @@
 //}
 
 //4.
-#include <stdio.h>
-#include <string.h>
+//#include <stdio.h>
+//#include <string.h>
+//
+//int demKyTuGiongNhau(const char *chuoi1, const char *chuoi2) {
+//	int dem = 0;
+//	int chieuDai1 = strlen(chuoi1);
+//	int chieuDai2 = strlen(chuoi2);
+//
+//	for (int i = 0; i < chieuDai1; i++) {
+//		for (int j = 0; j < chieuDai2; j++) {
+//			if (chuoi1[i] == chuoi2[j]) {
+//				dem++;
+//				break;
+//			}
+//		}
+//	}
+//
+//	return dem;
+//}
+//
+//int main() {
+//	char chuoi1[100];
+//	char chuoi2[100];
+//
+//	printf("Nhap chuoi 1: ");
+//	fgets(chuoi1, sizeof(chuoi1), stdin);
+//	printf("Nhap chuoi 2: ");
+//	fgets(chuoi2, sizeof(chuoi2), stdin);
+//
+//	int soKyTuGiong = demKyTuGiongNhau(chuoi1, chuoi2);
+//
+//	printf("So ky tu giong nhau trong hai chuoi: %d\n", soKyTuGiong);
+//
+//	return 0;
+//}
+//
+////=========================================
+//Bai 6
+//#include <stdio.h>
+//#include <string.h>
+//
+//void chenTu(char *chuoi, const char *tuCanChen, int viTriChen) {
+//	int chieuDaiChuoi = strlen(chuoi);
+//	int chieuDaiTu = strlen(tuCanChen);
+//
+//	if (viTriChen < 0 || viTriChen > chieuDaiChuoi) {
+//		printf("Vi tri chen khong hop le.\n");
+//		return;
+//	}
+//
+//
+//	for (int i = chieuDaiChuoi; i >= viTriChen; i--) {
+//		chuoi[i + chieuDaiTu] = chuoi[i];
+//	}
+//
+//	// Chèn từ vào chuỗi
+//	for (int i = 0; i < chieuDaiTu; i++) {
+//		chuoi[viTriChen + i] = tuCanChen[i];
+//	}
+//}
+//
+//int main() {
+//	char chuoi[1000];
+//	char tuCanChen[100];
+//	int viTriChen;
+//
+//	printf("Nhap chuoi: ");
+//	fgets(chuoi, sizeof(chuoi), stdin);
+//
+//	printf("Nhap tu can chen: ");
+//	fgets(tuCanChen, sizeof(tuCanChen), stdin);
+//
+//	printf("Nhap vi tri can chen: ");
+//	scanf("%d", &viTriChen);
+//
+//	chenTu(chuoi, tuCanChen, viTriChen);
+//
+//	printf("Chuoi sau khi chen tu: %s", chuoi);
+//
+//	return 0;
+//}
 
-int demKyTuGiongNhau(const char *chuoi1, const char *chuoi2) {
-	int dem = 0;
-	int chieuDai1 = strlen(chuoi1);
-	int chieuDai2 = strlen(chuoi2);
+//====================
+//Bai 3
 
-	for (int i = 0; i < chieuDai1; i++) {
-		for (int j = 0; j < chieuDai2; j++) {
-			if (chuoi1[i] == chuoi2[j]) {
-				dem++;
-				break;
-			}
-		}
+#include<stdio.h>
+#include<string.h>
+
+#define max 100
+int danhdau[256] = { 0 };
+
+void lietKe(char str[])
+{
+	int len = strlen(str);
+	for (int i = 0; i < len; i++)
+	{
+		danhdau[str[i]] ++;
 	}
 
-	return dem;
+	for (int i = 0; i < 256; i++)
+	{
+		if (danhdau[i] != 0)
+			printf("%c: %d\n", i, danhdau[i]);
+	}
 }
-
-int main() {
-	char chuoi1[100];
-	char chuoi2[100];
-
-	printf("Nhap chuoi 1: ");
-	fgets(chuoi1, sizeof(chuoi1), stdin);
-	printf("Nhap chuoi 2: ");
-	fgets(chuoi2, sizeof(chuoi2), stdin);
-
-	int soKyTuGiong = demKyTuGiongNhau(chuoi1, chuoi2);
-
-	printf("So ky tu giong nhau trong hai chuoi: %d\n", soKyTuGiong);
-
-	return 0;
-}
-
-
-//=======================================================
-#include <stdio.h>
-#include <string.h>
-
-void chenTu(char *chuoi, const char *tuCanChen, int viTriChen) {
-    int chieuDaiChuoi = strlen(chuoi);
-    int chieuDaiTu = strlen(tuCanChen);
-
-    if (viTriChen < 0 || viTriChen > chieuDaiChuoi) {
-        printf("Vi tri chen khong hop le.\n");
-        return;
-    }
-
-    // Dời các ký tự sau viTriChen sang phải để tạo không gian cho từ mới
-    for (int i = chieuDaiChuoi; i >= viTriChen; i--) {
-        chuoi[i + chieuDaiTu] = chuoi[i];
-    }
-
-    // Chèn từ vào chuỗi
-    for (int i = 0; i < chieuDaiTu; i++) {
-        chuoi[viTriChen + i] = tuCanChen[i];
-    }
-}
-
-int main() {
-    char chuoi[1000];
-    char tuCanChen[100];
-    int viTriChen;
-
-    printf("Nhap chuoi: ");
-    fgets(chuoi, sizeof(chuoi), stdin);
-
-    printf("Nhap tu can chen: ");
-    fgets(tuCanChen, sizeof(tuCanChen), stdin);
-
-    printf("Nhap vi tri can chen: ");
-    scanf("%d", &viTriChen);
-
-    chenTu(chuoi, tuCanChen, viTriChen);
-
-    printf("Chuoi sau khi chen tu: %s", chuoi);
-
-    return 0;
+int main()
+{
+	char str[max];
+	printf("Nhap xau: ");
+	gets(str);
+	lietKe(str);
 }
